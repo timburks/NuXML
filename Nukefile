@@ -11,7 +11,7 @@
               (set @arch (list "i386"))
               (set gnustep_flags ((NSString stringWithShellCommand:"gnustep-config --objc-flags") chomp))
               (set gnustep_libs ((NSString stringWithShellCommand:"gnustep-config --base-libs") chomp))
-              (set @cflags "-g -std=gnu99 -DLINUX -I/usr/local/include #{gnustep_flags}")
+              (set @cflags "-g -std=gnu99 -DLINUX -I/usr/include/libxml2 #{gnustep_flags}")
               (set @ldflags "#{gnustep_libs} -lxml2"))
       (else nil))
 
