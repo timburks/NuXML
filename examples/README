@@ -1,0 +1,3 @@
+
+curl http://github.com/api/v1/xml/timburks/nu/commits/master > github.xml
+

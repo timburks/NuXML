@@ -1,0 +1,793 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<commits type="array">
+  <commit>
+    <parents type="array">
+      <parent>
+        <id>23aae158e89c13ebdad4a65e963ee9294dcf79d1</id>
+      </parent>
+    </parents>
+    <author>
+      <name>Tim Burks</name>
+      <login>timburks</login>
+      <email>tim@neontology.com</email>
+    </author>
+    <url>http://github.com/timburks/nu/commit/c9767ab2fde2d232bac6079804e5814893a00a63</url>
+    <id>c9767ab2fde2d232bac6079804e5814893a00a63</id>
+    <committed-date>2010-02-05T23:55:14-08:00</committed-date>
+    <authored-date>2010-02-05T23:55:14-08:00</authored-date>
+    <message>nubile now automatically adds close-parens at the end of a file to close any open s-expressions.</message>
+    <tree>edae5681671037ec22ccc0ab2138f8a9c8ea3d21</tree>
+    <committer>
+      <name>Tim Burks</name>
+      <login>timburks</login>
+      <email>tim@neontology.com</email>
+    </committer>
+  </commit>
+  <commit>
+    <parents type="array">
+      <parent>
+        <id>03ba771e0a328fdfb79a3a6a857982001c9f4ec8</id>
+      </parent>
+    </parents>
+    <author>
+      <name>Tim Burks</name>
+      <login>timburks</login>
+      <email>tim@neontology.com</email>
+    </author>
+    <url>http://github.com/timburks/nu/commit/23aae158e89c13ebdad4a65e963ee9294dcf79d1</url>
+    <id>23aae158e89c13ebdad4a65e963ee9294dcf79d1</id>
+    <committed-date>2010-01-22T00:18:02-08:00</committed-date>
+    <authored-date>2010-01-22T00:18:02-08:00</authored-date>
+    <message>Fixed a GNUstep problem.</message>
+    <tree>32844797a97307f2f0bb7583e422a432b4e8db6b</tree>
+    <committer>
+      <name>Tim Burks</name>
+      <login>timburks</login>
+      <email>tim@neontology.com</email>
+    </committer>
+  </commit>
+  <commit>
+    <parents type="array">
+      <parent>
+        <id>23dbe5a3827868253ba070ff1d66bc95bd6228bd</id>
+      </parent>
+      <parent>
+        <id>2be8e8e3a2acbcb641f11b3754282716ea1a415c</id>
+      </parent>
+    </parents>
+    <author>
+      <name>Tim Burks</name>
+      <login>timburks</login>
+      <email>tim@neontology.com</email>
+    </author>
+    <url>http://github.com/timburks/nu/commit/03ba771e0a328fdfb79a3a6a857982001c9f4ec8</url>
+    <id>03ba771e0a328fdfb79a3a6a857982001c9f4ec8</id>
+    <committed-date>2010-01-20T23:17:21-08:00</committed-date>
+    <authored-date>2010-01-20T23:17:21-08:00</authored-date>
+    <message>Merge branch 'master' of git://github.com/itfrombit/nu</message>
+    <tree>bdbcce86933d623c97e524ac2f07b9cd69935a80</tree>
+    <committer>
+      <name>Tim Burks</name>
+      <login>timburks</login>
+      <email>tim@neontology.com</email>
+    </committer>
+  </commit>
+  <commit>
+    <parents type="array">
+      <parent>
+        <id>a7c200a3b22a1912203f64326b198b845e1dee5e</id>
+      </parent>
+    </parents>
+    <author>
+      <name>Jeff Buck</name>
+      <login></login>
+      <email>jeffreybuck@mac.com</email>
+    </author>
+    <url>http://github.com/timburks/nu/commit/2be8e8e3a2acbcb641f11b3754282716ea1a415c</url>
+    <id>2be8e8e3a2acbcb641f11b3754282716ea1a415c</id>
+    <committed-date>2010-01-20T22:46:45-08:00</committed-date>
+    <authored-date>2010-01-20T22:46:45-08:00</authored-date>
+    <message>Ported examples to Snow Leopard.</message>
+    <tree>26f1da9c0eb3c4fcd1a9d7dfaaa428bbc24ef6dc</tree>
+    <committer>
+      <name>Jeff Buck</name>
+      <login></login>
+      <email>jeffreybuck@mac.com</email>
+    </committer>
+  </commit>
+  <commit>
+    <parents type="array">
+      <parent>
+        <id>4cb6a0375517e112bf619830b982bdccbd470316</id>
+      </parent>
+    </parents>
+    <author>
+      <name>Jeff Buck</name>
+      <login></login>
+      <email>jeffreybuck@mac.com</email>
+    </author>
+    <url>http://github.com/timburks/nu/commit/a7c200a3b22a1912203f64326b198b845e1dee5e</url>
+    <id>a7c200a3b22a1912203f64326b198b845e1dee5e</id>
+    <committed-date>2010-01-20T18:08:28-08:00</committed-date>
+    <authored-date>2010-01-20T18:08:28-08:00</authored-date>
+    <message>Added x86_64 build arch for Snow Leopard.</message>
+    <tree>a25a469799a29743c726f6ad044d465a0993af62</tree>
+    <committer>
+      <name>Jeff Buck</name>
+      <login></login>
+      <email>jeffreybuck@mac.com</email>
+    </committer>
+  </commit>
+  <commit>
+    <parents type="array">
+      <parent>
+        <id>c7aa3d8141e62e39b48b2f563b13bb2b2f32fd79</id>
+      </parent>
+    </parents>
+    <author>
+      <name>Tim Burks</name>
+      <login>timburks</login>
+      <email>tim@neontology.com</email>
+    </author>
+    <url>http://github.com/timburks/nu/commit/23dbe5a3827868253ba070ff1d66bc95bd6228bd</url>
+    <id>23dbe5a3827868253ba070ff1d66bc95bd6228bd</id>
+    <committed-date>2009-12-20T15:51:06-08:00</committed-date>
+    <authored-date>2009-12-20T15:51:06-08:00</authored-date>
+    <message>updated Linux installation notes.</message>
+    <tree>66c58efd3f6e8b5c5df38d1c090db0e0f9461f22</tree>
+    <committer>
+      <name>Tim Burks</name>
+      <login>timburks</login>
+      <email>tim@neontology.com</email>
+    </committer>
+  </commit>
+  <commit>
+    <parents type="array">
+      <parent>
+        <id>40618cc518459b8a1bad1c427b2acbcd5a885653</id>
+      </parent>
+    </parents>
+    <author>
+      <name>tumble</name>
+      <login>tumble</login>
+      <email>jason@xeny.net</email>
+    </author>
+    <url>http://github.com/timburks/nu/commit/c7aa3d8141e62e39b48b2f563b13bb2b2f32fd79</url>
+    <id>c7aa3d8141e62e39b48b2f563b13bb2b2f32fd79</id>
+    <committed-date>2009-12-18T01:39:25-08:00</committed-date>
+    <authored-date>2009-12-18T01:39:25-08:00</authored-date>
+    <message>initial version of xcode syntax defs</message>
+    <tree>a9f21f54d53243fd9f359e2398df34de97506e1d</tree>
+    <committer>
+      <name>tumble</name>
+      <login>tumble</login>
+      <email>jason@xeny.net</email>
+    </committer>
+  </commit>
+  <commit>
+    <parents type="array">
+      <parent>
+        <id>89ade64e1af340155b632a0fdbb04e2fac0df574</id>
+      </parent>
+    </parents>
+    <author>
+      <name>tumble</name>
+      <login>tumble</login>
+      <email>jason@xeny.net</email>
+    </author>
+    <url>http://github.com/timburks/nu/commit/40618cc518459b8a1bad1c427b2acbcd5a885653</url>
+    <id>40618cc518459b8a1bad1c427b2acbcd5a885653</id>
+    <committed-date>2009-12-18T01:27:47-08:00</committed-date>
+    <authored-date>2009-12-18T01:27:47-08:00</authored-date>
+    <message>initial version of TextWrangler syntax defs</message>
+    <tree>17cf3257838177d83b7cbb5665fedd6478977fa0</tree>
+    <committer>
+      <name>tumble</name>
+      <login>tumble</login>
+      <email>jason@xeny.net</email>
+    </committer>
+  </commit>
+  <commit>
+    <parents type="array">
+      <parent>
+        <id>772994a922d0ad1068a9007b5294f9a8c668faae</id>
+      </parent>
+      <parent>
+        <id>4cb6a0375517e112bf619830b982bdccbd470316</id>
+      </parent>
+    </parents>
+    <author>
+      <name>Tim Burks</name>
+      <login>timburks</login>
+      <email>tim@neontology.com</email>
+    </author>
+    <url>http://github.com/timburks/nu/commit/89ade64e1af340155b632a0fdbb04e2fac0df574</url>
+    <id>89ade64e1af340155b632a0fdbb04e2fac0df574</id>
+    <committed-date>2009-12-04T08:03:03-08:00</committed-date>
+    <authored-date>2009-12-04T08:03:03-08:00</authored-date>
+    <message>Merge branch 'master' of git://github.com/itfrombit/nu</message>
+    <tree>9d0a2092608a1995130d19c051e253e8c5dd51aa</tree>
+    <committer>
+      <name>Tim Burks</name>
+      <login>timburks</login>
+      <email>tim@neontology.com</email>
+    </committer>
+  </commit>
+  <commit>
+    <parents type="array">
+      <parent>
+        <id>41d8ea868bf60b821c185ad99139019e94198a8a</id>
+      </parent>
+    </parents>
+    <author>
+      <name>Jeff Buck</name>
+      <login></login>
+      <email>jeffreybuck@mac.com</email>
+    </author>
+    <url>http://github.com/timburks/nu/commit/4cb6a0375517e112bf619830b982bdccbd470316</url>
+    <id>4cb6a0375517e112bf619830b982bdccbd470316</id>
+    <committed-date>2009-12-03T23:40:23-08:00</committed-date>
+    <authored-date>2009-12-03T23:40:23-08:00</authored-date>
+    <message>OpenSolaris port</message>
+    <tree>a79128471fb9201e83215507eb89a0eb07e43fd8</tree>
+    <committer>
+      <name>Jeff Buck</name>
+      <login></login>
+      <email>jeffreybuck@mac.com</email>
+    </committer>
+  </commit>
+  <commit>
+    <parents type="array">
+      <parent>
+        <id>41d8ea868bf60b821c185ad99139019e94198a8a</id>
+      </parent>
+    </parents>
+    <author>
+      <name>Tim Burks</name>
+      <login>timburks</login>
+      <email>tim@neontology.com</email>
+    </author>
+    <url>http://github.com/timburks/nu/commit/772994a922d0ad1068a9007b5294f9a8c668faae</url>
+    <id>772994a922d0ad1068a9007b5294f9a8c668faae</id>
+    <committed-date>2009-12-03T20:45:46-08:00</committed-date>
+    <authored-date>2009-12-03T20:45:46-08:00</authored-date>
+    <message>added stringByReplacingOccurrencesOfString:withString: (GNUstep-only, it's missing there).</message>
+    <tree>054e20408438d1287211a32c39be1458400d2d77</tree>
+    <committer>
+      <name>Tim Burks</name>
+      <login>timburks</login>
+      <email>tim@neontology.com</email>
+    </committer>
+  </commit>
+  <commit>
+    <parents type="array">
+      <parent>
+        <id>49a95e2a476b2e28ce8c106f009167381234bd88</id>
+      </parent>
+    </parents>
+    <author>
+      <name>Jeff Buck</name>
+      <login></login>
+      <email>jeffreybuck@mac.com</email>
+    </author>
+    <url>http://github.com/timburks/nu/commit/41d8ea868bf60b821c185ad99139019e94198a8a</url>
+    <id>41d8ea868bf60b821c185ad99139019e94198a8a</id>
+    <committed-date>2009-12-03T16:02:21-08:00</committed-date>
+    <authored-date>2009-12-03T16:02:21-08:00</authored-date>
+    <message>More FreeBSD porting instructions</message>
+    <tree>26d4a0be472c5775ee740ccb2f43eafa66f3c97b</tree>
+    <committer>
+      <name>Jeff Buck</name>
+      <login></login>
+      <email>jeffreybuck@mac.com</email>
+    </committer>
+  </commit>
+  <commit>
+    <parents type="array">
+      <parent>
+        <id>a3ce541f092aa368667c51c24330866e2a306060</id>
+      </parent>
+    </parents>
+    <author>
+      <name>Jeff Buck</name>
+      <login></login>
+      <email>jeffreybuck@mac.com</email>
+    </author>
+    <url>http://github.com/timburks/nu/commit/49a95e2a476b2e28ce8c106f009167381234bd88</url>
+    <id>49a95e2a476b2e28ce8c106f009167381234bd88</id>
+    <committed-date>2009-12-03T15:48:36-08:00</committed-date>
+    <authored-date>2009-12-03T15:48:36-08:00</authored-date>
+    <message>Porting changes for FreeBSD, OpenSolaris</message>
+    <tree>b0c9aed5089083590285a84f22f646a46ef7a7c7</tree>
+    <committer>
+      <name>Jeff Buck</name>
+      <login></login>
+      <email>jeffreybuck@mac.com</email>
+    </committer>
+  </commit>
+  <commit>
+    <parents type="array">
+      <parent>
+        <id>0851ae9f47555cff24e405240bba92ac9166cee5</id>
+      </parent>
+    </parents>
+    <author>
+      <name>Jeff Buck</name>
+      <login></login>
+      <email>jeffreybuck@mac.com</email>
+    </author>
+    <url>http://github.com/timburks/nu/commit/a3ce541f092aa368667c51c24330866e2a306060</url>
+    <id>a3ce541f092aa368667c51c24330866e2a306060</id>
+    <committed-date>2009-12-02T17:03:17-08:00</committed-date>
+    <authored-date>2009-12-02T17:03:17-08:00</authored-date>
+    <message>Fixed typo in FreeBSD installation notes.</message>
+    <tree>62f8185a54d606a660bdf5dd5877a5fb195ba245</tree>
+    <committer>
+      <name>Jeff Buck</name>
+      <login></login>
+      <email>jeffreybuck@mac.com</email>
+    </committer>
+  </commit>
+  <commit>
+    <parents type="array">
+      <parent>
+        <id>f53c72510a0fe8c8b7e74f671ccca1d923fcc981</id>
+      </parent>
+    </parents>
+    <author>
+      <name>Jeff Buck</name>
+      <login></login>
+      <email>jeffreybuck@mac.com</email>
+    </author>
+    <url>http://github.com/timburks/nu/commit/0851ae9f47555cff24e405240bba92ac9166cee5</url>
+    <id>0851ae9f47555cff24e405240bba92ac9166cee5</id>
+    <committed-date>2009-12-02T17:00:49-08:00</committed-date>
+    <authored-date>2009-12-02T17:00:49-08:00</authored-date>
+    <message>Changes to support FreeBSD.</message>
+    <tree>a44a5175e7685a74ede24252dae37f74964693fd</tree>
+    <committer>
+      <name>Jeff Buck</name>
+      <login></login>
+      <email>jeffreybuck@mac.com</email>
+    </committer>
+  </commit>
+  <commit>
+    <parents type="array">
+      <parent>
+        <id>3c0e9550ce12abbeddf11e0f710d40774699478e</id>
+      </parent>
+      <parent>
+        <id>8b54c4bd369a51326ec29338c662cf6c3ac7e246</id>
+      </parent>
+    </parents>
+    <author>
+      <name>Jeff Buck</name>
+      <login></login>
+      <email>jeffreybuck@mac.com</email>
+    </author>
+    <url>http://github.com/timburks/nu/commit/f53c72510a0fe8c8b7e74f671ccca1d923fcc981</url>
+    <id>f53c72510a0fe8c8b7e74f671ccca1d923fcc981</id>
+    <committed-date>2009-12-02T16:19:55-08:00</committed-date>
+    <authored-date>2009-12-02T16:19:55-08:00</authored-date>
+    <message>Merge branch 'master' of git://github.com/timburks/nu</message>
+    <tree>230126ea59c950838fb4e49b7da00e50ed35b28a</tree>
+    <committer>
+      <name>Jeff Buck</name>
+      <login></login>
+      <email>jeffreybuck@mac.com</email>
+    </committer>
+  </commit>
+  <commit>
+    <parents type="array">
+      <parent>
+        <id>eac09709c37e57c7bb676989d230f0373e2a9189</id>
+      </parent>
+    </parents>
+    <author>
+      <name>Jeff Buck</name>
+      <login></login>
+      <email>jeffreybuck@mac.com</email>
+    </author>
+    <url>http://github.com/timburks/nu/commit/3c0e9550ce12abbeddf11e0f710d40774699478e</url>
+    <id>3c0e9550ce12abbeddf11e0f710d40774699478e</id>
+    <committed-date>2009-12-02T16:19:34-08:00</committed-date>
+    <authored-date>2009-12-02T16:19:34-08:00</authored-date>
+    <message>Updated to 3.0 SDK</message>
+    <tree>1f5df1e96daa9d9dae2407b43894afc14da34c05</tree>
+    <committer>
+      <name>Jeff Buck</name>
+      <login></login>
+      <email>jeffreybuck@mac.com</email>
+    </committer>
+  </commit>
+  <commit>
+    <parents type="array">
+      <parent>
+        <id>76c4953f22acfa89dc1bdc6f17ca76af0a3e31a4</id>
+      </parent>
+    </parents>
+    <author>
+      <name>Tim Burks</name>
+      <login>timburks</login>
+      <email>tim@neontology.com</email>
+    </author>
+    <url>http://github.com/timburks/nu/commit/8b54c4bd369a51326ec29338c662cf6c3ac7e246</url>
+    <id>8b54c4bd369a51326ec29338c662cf6c3ac7e246</id>
+    <committed-date>2009-12-01T22:17:08-08:00</committed-date>
+    <authored-date>2009-12-01T22:17:08-08:00</authored-date>
+    <message>fixed new dictionary-setting shorthand to evaluate key and value arguments</message>
+    <tree>230126ea59c950838fb4e49b7da00e50ed35b28a</tree>
+    <committer>
+      <name>Tim Burks</name>
+      <login>timburks</login>
+      <email>tim@neontology.com</email>
+    </committer>
+  </commit>
+  <commit>
+    <parents type="array">
+      <parent>
+        <id>37bee3fa1c91ec56ffac2e66bd076da59377ec78</id>
+      </parent>
+    </parents>
+    <author>
+      <name>Tim Burks</name>
+      <login>timburks</login>
+      <email>tim@neontology.com</email>
+    </author>
+    <url>http://github.com/timburks/nu/commit/76c4953f22acfa89dc1bdc6f17ca76af0a3e31a4</url>
+    <id>76c4953f22acfa89dc1bdc6f17ca76af0a3e31a4</id>
+    <committed-date>2009-12-01T21:49:45-08:00</committed-date>
+    <authored-date>2009-12-01T21:49:45-08:00</authored-date>
+    <message>new tricks for setting NSMutableDictionary entries.
+
+I have been growing tired of writing setObject:forKey: whenever I need
+to set values in dictionaries.
+
+For a long time now, we've been able to access dictionary entries by
+simply providing keys as virtual methods that are implemented with
+[NSDictionary(Nu) handleUnknownMessage:withContext:]
+
+% (set d (dict a:12 b:23 c:34))
+&lt;NSCFDictionary:3805ec0&gt;
+% (d &quot;a&quot;)
+12
+
+Originally, I chose to require &quot;a&quot; to be a string (and not a symbol)
+to allow this same access mechanism to be used with keys that are
+represented by variables.
+
+% (set x (array &quot;a&quot; &quot;b&quot; &quot;c&quot;))
+&lt;NSCFArray:38064a0&gt;
+% (x each:(do (i) (puts (d i))))
+12
+23
+34
+&lt;NSCFArray:38064a0&gt;
+
+Of course this is all sugar; we could have made the same accesses
+using [NSDictionary objectForKey:], but this lets us type less and is
+fairly intuitive.
+
+Along those same lines, I have a change in my local git repository
+that allows me to set dictionary contents  with a similar shorthand:
+
+% (d a:56)
+% (d &quot;a&quot;)
+56
+
+Also, since symbols that end with a semicolon are already treated
+specially (I call them &quot;labels&quot; and they evaluate to themselves), I
+decided to make this possible also:
+
+% (d a:)
+56
+
+All of this is implemented in a rewritten version of [NSDictionary(Nu)
+handleUnknownMessage:withContext:]
+
+Also, drawing code from [NSDictionary(Nu) dictionaryWithList:], it was
+easy to go ahead and support the following, which is similar to the
+existing &quot;dict&quot; operator:
+
+% (d a:78 d:89 e:90)
+% (puts (d description))
+{
+   a = 78;
+   b = 23;
+   c = 34;
+   d = 89;
+   e = 90;
+}
+()
+
+As a seemingly-reasonable side effect, this also works:
+
+% (d a:11 b:22 c:33 a:)
+11
+
+A couple of notes:
+
+1. (d a:11 b:22 c:33) is equivalent to (d a: 11 b: 22 c: 33). The Nu
+parser always ends symbols on semicolons.
+
+2. This would generate exceptions if you tried to modify immutable
+dictionaries.
+
+% (set d (NSDictionary dictionaryWithObject:123 forKey:&quot;a&quot;))
+&lt;NSCFDictionary:3807470&gt;
+% (d &quot;a&quot;)
+123
+% (d a:)
+123
+% (d a:456)
+NSInternalInconsistencyException: *** -[NSCFDictionary
+nuSetObject:forKey:]: mutating method sent to immutable object</message>
+    <tree>c38716ac1eec236c980645d49e40183177c9c654</tree>
+    <committer>
+      <name>Tim Burks</name>
+      <login>timburks</login>
+      <email>tim@neontology.com</email>
+    </committer>
+  </commit>
+  <commit>
+    <parents type="array">
+      <parent>
+        <id>d0d0d82b5de3a7697bbce54b21a4833378390c7a</id>
+      </parent>
+    </parents>
+    <author>
+      <name>tumble</name>
+      <login>tumble</login>
+      <email>jason@xeny.net</email>
+    </author>
+    <url>http://github.com/timburks/nu/commit/37bee3fa1c91ec56ffac2e66bd076da59377ec78</url>
+    <id>37bee3fa1c91ec56ffac2e66bd076da59377ec78</id>
+    <committed-date>2009-11-29T20:40:23-08:00</committed-date>
+    <authored-date>2009-11-29T20:40:23-08:00</authored-date>
+    <message>fixed line break</message>
+    <tree>ee6e690c3dbce7e7678b477cb9b2ebf62cb6121c</tree>
+    <committer>
+      <name>tumble</name>
+      <login>tumble</login>
+      <email>jason@xeny.net</email>
+    </committer>
+  </commit>
+  <commit>
+    <parents type="array">
+      <parent>
+        <id>884d511638078fe6f59eb6b055424b7b6be8fc4d</id>
+      </parent>
+    </parents>
+    <author>
+      <name>tumble</name>
+      <login>tumble</login>
+      <email>jason@xeny.net</email>
+    </author>
+    <url>http://github.com/timburks/nu/commit/d0d0d82b5de3a7697bbce54b21a4833378390c7a</url>
+    <id>d0d0d82b5de3a7697bbce54b21a4833378390c7a</id>
+    <committed-date>2009-11-29T20:39:11-08:00</committed-date>
+    <authored-date>2009-11-29T20:39:11-08:00</authored-date>
+    <message>fixed typo (line break)</message>
+    <tree>16bfc00c112096d096440f1b6281e8cdfd7d9dbc</tree>
+    <committer>
+      <name>tumble</name>
+      <login>tumble</login>
+      <email>jason@xeny.net</email>
+    </committer>
+  </commit>
+  <commit>
+    <parents type="array">
+      <parent>
+        <id>a2de218835525177853148e94974e62de318eee6</id>
+      </parent>
+    </parents>
+    <author>
+      <name>tumble</name>
+      <login>tumble</login>
+      <email>jason@xeny.net</email>
+    </author>
+    <url>http://github.com/timburks/nu/commit/884d511638078fe6f59eb6b055424b7b6be8fc4d</url>
+    <id>884d511638078fe6f59eb6b055424b7b6be8fc4d</id>
+    <committed-date>2009-11-29T17:54:12-08:00</committed-date>
+    <authored-date>2009-11-29T17:54:12-08:00</authored-date>
+    <message>added instruction to uninstall old packaged version first</message>
+    <tree>2698c6c49d55b360bc2fec7ede772da12cb4680f</tree>
+    <committer>
+      <name>tumble</name>
+      <login>tumble</login>
+      <email>jason@xeny.net</email>
+    </committer>
+  </commit>
+  <commit>
+    <parents type="array">
+      <parent>
+        <id>c828252f45eca3828f6fbf5ea777a79961021317</id>
+      </parent>
+    </parents>
+    <author>
+      <name>tumble</name>
+      <login>tumble</login>
+      <email>jason@xeny.net</email>
+    </author>
+    <url>http://github.com/timburks/nu/commit/a2de218835525177853148e94974e62de318eee6</url>
+    <id>a2de218835525177853148e94974e62de318eee6</id>
+    <committed-date>2009-11-29T17:53:24-08:00</committed-date>
+    <authored-date>2009-11-29T17:53:24-08:00</authored-date>
+    <message>added instruction to uninstall old packaged version first</message>
+    <tree>3eb4a46becf98642255c9916b2fe0d7fea7b004f</tree>
+    <committer>
+      <name>tumble</name>
+      <login>tumble</login>
+      <email>jason@xeny.net</email>
+    </committer>
+  </commit>
+  <commit>
+    <parents type="array">
+      <parent>
+        <id>0574e66853c3a79ddc808544c2f30cc874e183cd</id>
+      </parent>
+      <parent>
+        <id>fab700c138749e9bc773ef345b5f354d49750312</id>
+      </parent>
+    </parents>
+    <author>
+      <name>Tim Burks</name>
+      <login>timburks</login>
+      <email>tim@neontology.com</email>
+    </author>
+    <url>http://github.com/timburks/nu/commit/c828252f45eca3828f6fbf5ea777a79961021317</url>
+    <id>c828252f45eca3828f6fbf5ea777a79961021317</id>
+    <committed-date>2009-11-17T18:54:47-08:00</committed-date>
+    <authored-date>2009-11-17T18:54:47-08:00</authored-date>
+    <message>Merge branch 'master' of git://github.com/al-skobelev/nu</message>
+    <tree>7d4af94009dc5b6a0d90a8ae6da8b22ffea413af</tree>
+    <committer>
+      <name>Tim Burks</name>
+      <login>timburks</login>
+      <email>tim@neontology.com</email>
+    </committer>
+  </commit>
+  <commit>
+    <parents type="array">
+      <parent>
+        <id>1b3506d103531e98591ced36a249de0ff42c7f50</id>
+      </parent>
+    </parents>
+    <author>
+      <name>Tim Burks</name>
+      <login>timburks</login>
+      <email>tim@neontology.com</email>
+    </author>
+    <url>http://github.com/timburks/nu/commit/0574e66853c3a79ddc808544c2f30cc874e183cd</url>
+    <id>0574e66853c3a79ddc808544c2f30cc874e183cd</id>
+    <committed-date>2009-11-17T17:12:00-08:00</committed-date>
+    <authored-date>2009-11-17T17:12:00-08:00</authored-date>
+    <message>v0.4.0 release candidate.
+
+Minor fix to nudoc. Deprecate Rakefile, we now prefer to bootstrap with make.</message>
+    <tree>3ff294f2470695fdb5354a6cd9d621ee80fe6914</tree>
+    <committer>
+      <name>Tim Burks</name>
+      <login>timburks</login>
+      <email>tim@neontology.com</email>
+    </committer>
+  </commit>
+  <commit>
+    <parents type="array">
+      <parent>
+        <id>b81eb091e015b4a8aa15b0116e43c892f4354f7f</id>
+      </parent>
+      <parent>
+        <id>f291b8c291d7f174fbb209c199b44d571fa64eb8</id>
+      </parent>
+    </parents>
+    <author>
+      <name>Tim Burks</name>
+      <login>timburks</login>
+      <email>tim@neontology.com</email>
+    </author>
+    <url>http://github.com/timburks/nu/commit/1b3506d103531e98591ced36a249de0ff42c7f50</url>
+    <id>1b3506d103531e98591ced36a249de0ff42c7f50</id>
+    <committed-date>2009-11-14T14:37:35-08:00</committed-date>
+    <authored-date>2009-11-14T14:37:35-08:00</authored-date>
+    <message>Merge branch 'master' of git@github.com:timburks/nu</message>
+    <tree>9e32f924edfd7c60cca341930426e49b3a6a54dd</tree>
+    <committer>
+      <name>Tim Burks</name>
+      <login>timburks</login>
+      <email>tim@neontology.com</email>
+    </committer>
+  </commit>
+  <commit>
+    <parents type="array">
+      <parent>
+        <id>093862f578d4423dd47e356413ed5129a8c089c6</id>
+      </parent>
+    </parents>
+    <author>
+      <name>Tim Burks</name>
+      <login>timburks</login>
+      <email>tim@neontology.com</email>
+    </author>
+    <url>http://github.com/timburks/nu/commit/b81eb091e015b4a8aa15b0116e43c892f4354f7f</url>
+    <id>b81eb091e015b4a8aa15b0116e43c892f4354f7f</id>
+    <committed-date>2009-11-14T14:24:09-08:00</committed-date>
+    <authored-date>2009-11-14T14:24:09-08:00</authored-date>
+    <message>Switched macro to &quot;macro-1&quot;. Updates to iPhone build environment.</message>
+    <tree>96e80e3103c48d358bd2e8e1f76022e90a72b8d6</tree>
+    <committer>
+      <name>Tim Burks</name>
+      <login>timburks</login>
+      <email>tim@neontology.com</email>
+    </committer>
+  </commit>
+  <commit>
+    <parents type="array">
+      <parent>
+        <id>093862f578d4423dd47e356413ed5129a8c089c6</id>
+      </parent>
+    </parents>
+    <author>
+      <name>Tim Burks</name>
+      <login>timburks</login>
+      <email>tim@neontology.com</email>
+    </author>
+    <url>http://github.com/timburks/nu/commit/f291b8c291d7f174fbb209c199b44d571fa64eb8</url>
+    <id>f291b8c291d7f174fbb209c199b44d571fa64eb8</id>
+    <committed-date>2009-10-07T18:46:10-07:00</committed-date>
+    <authored-date>2009-10-07T18:46:10-07:00</authored-date>
+    <message>added array method to NSNull and NuCell to easily convert lists into arrays.</message>
+    <tree>df4700d28821c1d247699e142a86b2f11f2ac5d0</tree>
+    <committer>
+      <name>Tim Burks</name>
+      <login>timburks</login>
+      <email>tim@neontology.com</email>
+    </committer>
+  </commit>
+  <commit>
+    <parents type="array">
+      <parent>
+        <id>f45732b9d6ed336f2f5f62906e6936b80d753e0c</id>
+      </parent>
+    </parents>
+    <author>
+      <name>Tim Burks</name>
+      <login>timburks</login>
+      <email>tim@neontology.com</email>
+    </author>
+    <url>http://github.com/timburks/nu/commit/093862f578d4423dd47e356413ed5129a8c089c6</url>
+    <id>093862f578d4423dd47e356413ed5129a8c089c6</id>
+    <committed-date>2009-10-03T19:20:02-07:00</committed-date>
+    <authored-date>2009-10-03T19:20:02-07:00</authored-date>
+    <message>made profiling macro global.</message>
+    <tree>49690e77842bad7393b6804b0cbc842dde436f5e</tree>
+    <committer>
+      <name>Tim Burks</name>
+      <login>timburks</login>
+      <email>tim@neontology.com</email>
+    </committer>
+  </commit>
+  <commit>
+    <parents type="array">
+      <parent>
+        <id>febea0dd08fe1df243b4bb834c8c9f40b8d0df6e</id>
+      </parent>
+    </parents>
+    <author>
+      <name>Tim Burks</name>
+      <login>timburks</login>
+      <email>tim@neontology.com</email>
+    </author>
+    <url>http://github.com/timburks/nu/commit/f45732b9d6ed336f2f5f62906e6936b80d753e0c</url>
+    <id>f45732b9d6ed336f2f5f62906e6936b80d753e0c</id>
+    <committed-date>2009-09-30T21:15:18-07:00</committed-date>
+    <authored-date>2009-09-30T21:15:18-07:00</authored-date>
+    <message>added profile macro.</message>
+    <tree>eda94bdb14aabe9f4da6171d5cf7d8f7d29b7f5d</tree>
+    <committer>
+      <name>Tim Burks</name>
+      <login>timburks</login>
+      <email>tim@neontology.com</email>
+    </committer>
+  </commit>
+</commits>
