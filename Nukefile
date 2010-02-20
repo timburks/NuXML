@@ -16,8 +16,8 @@
       (else nil))
 
 ;; framework description
-(set @framework "MinimalXML")
-(set @framework_identifier "nu.programming.minimalxml")
+(set @framework "NuXML")
+(set @framework_identifier "nu.programming.nuxml")
 (set @framework_creator_code "????")
 
 (compilation-tasks)

@@ -14,6 +14,13 @@ limitations under the License.
 
 #import <Foundation/Foundation.h>
 
-@interface NSString (MinimalXML)
-- (id) XMLValue;
+@interface NSString (NuXML)
+- (id) xmlValue;
+@end
+
+@interface NSArray (NuXML)
+- (NSArray *) xmlChildrenWithName:(NSString *) name;
+- (id) xmlChildWithName:(NSString *) name;
+- (id) xmlNodeValue;
+- (id) xmlNodeValueOfChildWithName:(NSString *) name;
 @end

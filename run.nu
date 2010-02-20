@@ -1,4 +1,4 @@
-(load "MinimalXML")
+(load "NuXML")
 
 (set xmlString <<-END
 <fruits>
@@ -7,7 +7,7 @@
 </fruits>
 END)
 
-(puts ((xmlString XMLValue) description))
+(puts ((xmlString xmlValue) description))
 
 (set files (array "examples/github.xml"
                   "examples/namespace.xml"

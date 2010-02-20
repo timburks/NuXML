@@ -12,12 +12,12 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-#import "MinimalXML.h"
+#import "NuXML.h"
 
 #import <libxml/xmlmemory.h>
 #import <libxml/xmlstring.h>
 
-@interface MinimalXMLParser : NSObject
+@interface NuXMLParser : NSObject
 {
     @private
     NSMutableArray *stack;
@@ -25,14 +25,14 @@ limitations under the License.
 
 - (id) parseXML:(NSString *)XMLString parseError:(NSError **)parseError;
 
-static void minimalXMLStartElement(void *ctx, const xmlChar *localname, const xmlChar *prefix, const xmlChar *URI, int nb_namespaces, const xmlChar **namespaces, int nb_attributes, int nb_defaulted, const xmlChar **attributes);
-static void minimalXMLEndElement(void *ctx, const xmlChar *localname, const xmlChar *prefix, const xmlChar *URI);
-static void minimalXMLCharactersFound(void * ctx, const xmlChar * ch, int len);
-static void minimalXMLErrorHandler(void * ctx, const char * msg, ...);
-static void minimalXMLFatalHandler(void * ctx, const char * msg, ...);
+static void nuXMLStartElement(void *ctx, const xmlChar *localname, const xmlChar *prefix, const xmlChar *URI, int nb_namespaces, const xmlChar **namespaces, int nb_attributes, int nb_defaulted, const xmlChar **attributes);
+static void nuXMLEndElement(void *ctx, const xmlChar *localname, const xmlChar *prefix, const xmlChar *URI);
+static void nuXMLCharactersFound(void * ctx, const xmlChar * ch, int len);
+static void nuXMLErrorHandler(void * ctx, const char * msg, ...);
+static void nuXMLFatalHandler(void * ctx, const char * msg, ...);
 @end
 
-static xmlSAXHandler minimalSAXHandlerStruct =
+static xmlSAXHandler nuSAXHandlerStruct =
 {
     NULL,                                         /* internalSubset */
     NULL,                                         /* isStandalone   */
@@ -51,26 +51,26 @@ static xmlSAXHandler minimalSAXHandlerStruct =
     NULL,                                         /* startElement*/
     NULL,                                         /* endElement */
     NULL,                                         /* reference */
-    minimalXMLCharactersFound,                    /* characters */
+    nuXMLCharactersFound,                         /* characters */
     NULL,                                         /* ignorableWhitespace */
     NULL,                                         /* processingInstruction */
     NULL,                                         /* comment */
     NULL,                                         /* warning */
-    minimalXMLErrorHandler,                       /* error */
-    minimalXMLFatalHandler,                       /* fatalError */
+    nuXMLErrorHandler,                            /* error */
+    nuXMLFatalHandler,                            /* fatalError */
     NULL,                                         /* getParameterEntity */
     NULL,                                         /* cdataBlock */
     NULL,                                         /* externalSubset */
     XML_SAX2_MAGIC,                               //
     NULL,
-    minimalXMLStartElement,                       /* startElementNs */
-    minimalXMLEndElement,                         /* endElementNs */
+    nuXMLStartElement,                            /* startElementNs */
+    nuXMLEndElement,                              /* endElementNs */
     NULL,                                         /* serror */
 };
 
-static xmlSAXHandler *minimalSAXHandler = &minimalSAXHandlerStruct;
+static xmlSAXHandler *nuSAXHandler = &nuSAXHandlerStruct;
 
-@implementation MinimalXMLParser
+@implementation NuXMLParser
 
 - (id) parseXML:(NSString *)XMLStringObject parseError:(NSError **)parseError
 {
@@ -84,7 +84,7 @@ static xmlSAXHandler *minimalSAXHandler = &minimalSAXHandlerStruct;
 
     xmlParserCtxtPtr ctxt = xmlCreateDocParserCtxt((xmlChar*)XMLString);
 
-    int parseResult = xmlSAXUserParseMemory(minimalSAXHandler, self, XMLString, strlen(XMLString));
+    int parseResult = xmlSAXUserParseMemory(nuSAXHandler, self, XMLString, strlen(XMLString));
 
     xmlFreeParserCtxt(ctxt);
     xmlCleanupParser();
@@ -118,9 +118,9 @@ static NSString *getQualifiedName (const xmlChar *prefix, const xmlChar *localNa
         return [NSString stringWithFormat:@"%s:%s", prefix, localName];
 }
 
-static void minimalXMLStartElement(void *ctx, const xmlChar *localname, const xmlChar *prefix, const xmlChar *URI, int nb_namespaces, const xmlChar **namespaces, int nb_attributes, int nb_defaulted, const xmlChar **attributes)
+static void nuXMLStartElement(void *ctx, const xmlChar *localname, const xmlChar *prefix, const xmlChar *URI, int nb_namespaces, const xmlChar **namespaces, int nb_attributes, int nb_defaulted, const xmlChar **attributes)
 {
-    MinimalXMLParser *currentReader = (MinimalXMLParser *)ctx;
+    NuXMLParser *currentReader = (NuXMLParser *)ctx;
 
     id element = getQualifiedName(prefix, localname);
     [currentReader->stack addObject:[NSMutableArray arrayWithObject:element]];
@@ -161,9 +161,9 @@ static void minimalXMLStartElement(void *ctx, const xmlChar *localname, const xm
     }
 }
 
-static void minimalXMLEndElement(void *ctx, const xmlChar *localname, const xmlChar *prefix, const xmlChar *URI)
+static void nuXMLEndElement(void *ctx, const xmlChar *localname, const xmlChar *prefix, const xmlChar *URI)
 {
-    MinimalXMLParser *currentReader = (MinimalXMLParser *) ctx;
+    NuXMLParser *currentReader = (NuXMLParser *) ctx;
     if ([currentReader->stack count] > 1) {
         id top = [currentReader->stack lastObject];
         [currentReader->stack removeLastObject];
@@ -171,9 +171,9 @@ static void minimalXMLEndElement(void *ctx, const xmlChar *localname, const xmlC
     }
 }
 
-static void minimalXMLCharactersFound(void *ctx, const xmlChar *ch, int len)
+static void nuXMLCharactersFound(void *ctx, const xmlChar *ch, int len)
 {
-    MinimalXMLParser *currentReader = (MinimalXMLParser *)ctx;
+    NuXMLParser *currentReader = (NuXMLParser *)ctx;
     NSString *string = [[[NSString alloc] initWithBytes:ch length:len encoding:NSUTF8StringEncoding] autorelease];
     string = [string stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
     if ([string length] > 0) {
@@ -181,25 +181,65 @@ static void minimalXMLCharactersFound(void *ctx, const xmlChar *ch, int len)
     }
 }
 
-static void minimalXMLErrorHandler(void * ctx, const char * msg, ...)
+static void nuXMLErrorHandler(void * ctx, const char * msg, ...)
 {
     NSLog(@"XML error: %s", msg);
 }
 
-static void minimalXMLFatalHandler(void * ctx, const char * msg, ...)
+static void nuXMLFatalHandler(void * ctx, const char * msg, ...)
 {
     NSLog(@"Fatal XML error: %s", msg);
 }
 
 @end
 
-@implementation NSString (MinimalXML)
+@implementation NSString (NuXML)
 
-- (id) XMLValue
+- (id) xmlValue
 {
-    id parser = [[[MinimalXMLParser alloc] init] autorelease];
+    id parser = [[[NuXMLParser alloc] init] autorelease];
     id result = [parser parseXML:self parseError:nil];
     return result;
+}
+
+@end
+
+@implementation NSArray (NuXML)
+
+- (NSArray *) xmlChildrenWithName:(NSString *) name {
+    NSMutableArray *result = [NSMutableArray array];
+    int max = [self count];
+    for (int i = 1; i < max; i++) {
+        id child = [self objectAtIndex:i];
+        if ([child isKindOfClass:[NSArray class]] && [[child objectAtIndex:0] isEqualToString:name]) {
+            [result addObject:child];
+        }
+    }
+    return result;
+}
+
+- (id) xmlChildWithName:(NSString *) name {
+    int max = [self count];
+    for (int i = 1; i < max; i++) {
+        id child = [self objectAtIndex:i];
+        if ([child isKindOfClass:[NSArray class]] && [[child objectAtIndex:0] isEqualToString:name]) {
+            return child;
+        }
+    }
+    return nil;
+}
+
+- (id) xmlNodeValue {
+    id element = [self objectAtIndex:1];
+    if ([element isKindOfClass:[NSDictionary class]]) {
+        return [self objectAtIndex:2];
+    } else {
+        return element;
+    }
+}
+
+- (id) xmlNodeValueOfChildWithName:(NSString *) name {
+    return [[self xmlChildWithName:name] xmlNodeValue];
 }
 
 @end

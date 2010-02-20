@@ -1,4 +1,4 @@
-(load "MinimalXML")
+(load "NuXML")
 
 (class TestParse is NuTestCase
      (- testFromXML is
@@ -9,7 +9,7 @@
         (set golden (array "fruits"
                            (array "apple" (dict version:"4.0" language:"english") "Red Delicious")
                            (array "orange" "Cara Cara")))
-        (assert_equal golden (xmlString XMLValue))))
+        (assert_equal golden (xmlString xmlValue))))
 
 
 
