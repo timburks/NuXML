@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<ResultSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:yahoo:maps" xsi:schemaLocation="urn:yahoo:maps http://api.local.yahoo.com/MapsService/V1/GeocodeResponse.xsd"><Result precision="address"><Latitude>37.377780</Latitude><Longitude>-122.117717</Longitude><Address>401 Main St</Address><City>Los Altos</City><State>CA</State><Zip>94022-2822</Zip><Country>US</Country></Result></ResultSet>
+<!-- ws10.ydn.gq1.yahoo.com uncompressed/chunked Sat Feb 20 01:04:10 PST 2010 -->
+
