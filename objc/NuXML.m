@@ -206,7 +206,32 @@ static void nuXMLFatalHandler(void * ctx, const char * msg, ...)
 
 @implementation NSArray (NuXML)
 
-- (NSArray *) xmlChildrenWithName:(NSString *) name {
+- (NSDictionary *) xmlAttributes
+{
+    id item;
+    if (([self count] > 0) && [(item = [self objectAtIndex:1]) isKindOfClass:[NSDictionary class]]) {
+        return item;
+    }
+    else {
+        return [NSDictionary dictionary];
+    }
+}
+
+- (NSArray *) xmlChildren
+{
+    NSMutableArray *result = [NSMutableArray array];
+    int max = [self count];
+    for (int i = 1; i < max; i++) {
+        id child = [self objectAtIndex:i];
+        if ([child isKindOfClass:[NSArray class]]) {
+            [result addObject:child];
+        }
+    }
+    return result;
+}
+
+- (NSArray *) xmlChildrenWithName:(NSString *) name
+{
     NSMutableArray *result = [NSMutableArray array];
     int max = [self count];
     for (int i = 1; i < max; i++) {
@@ -218,7 +243,8 @@ static void nuXMLFatalHandler(void * ctx, const char * msg, ...)
     return result;
 }
 
-- (id) xmlChildWithName:(NSString *) name {
+- (id) xmlChildWithName:(NSString *) name
+{
     int max = [self count];
     for (int i = 1; i < max; i++) {
         id child = [self objectAtIndex:i];
@@ -229,17 +255,31 @@ static void nuXMLFatalHandler(void * ctx, const char * msg, ...)
     return nil;
 }
 
-- (id) xmlNodeValue {
+- (id) xmlNodeValue
+{
     id element = [self objectAtIndex:1];
     if ([element isKindOfClass:[NSDictionary class]]) {
         return [self objectAtIndex:2];
-    } else {
+    }
+    else {
         return element;
     }
 }
 
-- (id) xmlNodeValueOfChildWithName:(NSString *) name {
+- (id) xmlNodeValueOfChildWithName:(NSString *) name
+{
     return [[self xmlChildWithName:name] xmlNodeValue];
+}
+
+- (id) xmlNodeValueOfChildWithPath:(NSString *) name
+{
+    id parts = [name componentsSeparatedByString:@"."];
+    id cursor = self;
+    int i;
+    for (i = 0; i < [parts count] - 1; i++) {
+        cursor = [cursor xmlChildWithName:[parts objectAtIndex:i]];
+    }
+    return [cursor xmlNodeValueOfChildWithName:[parts objectAtIndex:i]];
 }
 
 @end
