@@ -238,6 +238,15 @@ static void nuXMLFatalHandler(void * ctx, const char * msg, ...)
     }
 }
 
+- (id) xmlNodeStringValue {
+    id element = [self objectAtIndex:1];
+    if ([element isKindOfClass:[NSDictionary class]]) {
+        return [[self subarrayWithRange:NSMakeRange(2, [self count]-2)] componentsJoinedByString:@""];
+    } else {
+        return [[self subarrayWithRange:NSMakeRange(1, [self count]-1)] componentsJoinedByString:@""];
+    }
+}
+
 - (id) xmlNodeValueOfChildWithName:(NSString *) name {
     return [[self xmlChildWithName:name] xmlNodeValue];
 }
