@@ -4,7 +4,7 @@
 (set SYSTEM ((NSString stringWithShellCommand:"uname") chomp))
 (case SYSTEM
       ("Darwin"
-               (set @arch (list "i386"))
+               (set @arch (list "i386" "x86_64"))
                (set @cflags "-g -std=gnu99 -fobjc-gc -DDARWIN -I /usr/include/libxml2")
                (set @ldflags  "-framework Foundation -lxml2"))
       ("Linux"
